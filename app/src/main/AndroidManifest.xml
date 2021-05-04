@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.greicyitakura.marvelhq">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MarvelHQ">
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.example.marvelhq.view.activity.FavoriteComicsActivity"></activity>
+        <activity android:name="com.example.marvelhq.view.activity.FullScreenImageActivity" />
+        <activity android:name="com.example.marvelhq.view.activity.ComicDetailsActivity" />
+        <activity android:name="com.example.marvelhq.view.activity.HomeActivity" />
+        <activity android:name="com.example.marvelhq.view.activity.LoginActivity" />
+        <activity android:name="com.example.marvelhq.view.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
